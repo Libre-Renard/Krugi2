@@ -11,7 +11,6 @@ class Example(QWidget):
         uic.loadUi('UI.ui', self)
         self.button.clicked.connect(self.but)
         self.setWindowTitle('Рисование')
-        self.show()
         self.flag = False
 
     def but(self):
@@ -40,4 +39,5 @@ class Example(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Example()
+    ex.show()
     sys.exit(app.exec_())
