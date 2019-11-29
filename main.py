@@ -31,7 +31,7 @@ class Example(QWidget):
         for i in range(n):
             a = random.randint(0, 300)
             b = random.randint(0, 300)
-            qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+            qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
             qp.drawEllipse(b, b, a, a)
 
 
